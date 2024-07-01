@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    background-color: #A6C9FF;
+}
+
+nav{
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #B47FF6;
+
+}
+
+.open-menu {
+    padding: 0 10%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clos-menu-links a:hover{
+    background-size: 100% 2px;
+}
+
+nav>ul>li a{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+
+}
+
+nav>ul>li a:hover{
+    background-size: 100% 2px;
+}
+
+.SectionPop-up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 176px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #7029CB;
+}
+
+.SectionPop-upSpanL {
+    cursor: pointer;
+    border: solid #FFF;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    padding: 20px;
+    transform: rotate(45deg);
+}
+.SectionPop-upSpanR {
+    cursor: pointer;
+    border: solid #FFF;
+    border-width: 0 0 2px 2px;
+    display: inline-block;
+    padding: 20px;
+    transform: rotate(45deg);
+}
+
+.SectionPop-upMainText{
+    display: flex;
+    align-items: center;
+}
+
+.SectionPop-upMainText h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+
+}
+.SectionBlock2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.SectionBlock2 h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+
+    padding-bottom: 3%;
+}
+
+.SectionBlock2Main{
+    width: 100%;
+    height: 414px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.i1::before{
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 62px;
+
+    content: "1";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i2::before{
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 62px;
+
+    content: "2";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i3::before{
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 62px;
+
+    content: "3";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i4::before{
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 62px;
+
+    content: "4";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lime{
+    background: #3ADE4B;
+    height: 198px;
+}
+
+.w392{
+    width: 33.5%;
+}
+.w765{
+    width: 65.3%;
+}
+.w995{
+    width: 85%;
+}
+.w162{
+    width: 13.8%;
+}
+
+.SectionBlock3{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionBlock3 h2{
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.SectionBlock3Main{
+    width: 95.7%;
+    height: 248px;
+    background: #D4FF5A;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.SectionBlock3Box{
+    width: 17.7%;
+    height: 80%;
+    background:#497957 ;
+
+    border: 2px solid #00FF4A;
+
+    box-shadow: 2px 5px 10px #497957;
+    border-radius: 35px;
+}
+
+.SectionTextUtp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.SectionTextUtp button {
+    height: 58px;
+    width: 262px;
+}
+
+.SectionTextUtpText{
+    padding-top: 3%;
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 45px;
+
+    color: #F3F3F3;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #D87FF7;
+}
+.FooterContent{
+    width: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 45px;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+
+}
+
+footer a:hover{
+    background-size: 100% 2px;
+}
+
+.wrapper {
+    animation: Wrapper 1s;
+}
+@keyframes Wrapper{
+    0%{
+        transform: translateY(-300px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

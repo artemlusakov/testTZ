@@ -1,0 +1,134 @@
+/* Кнопка для открытия */
+
+.css-modal-target-container{
+    width: 262px;
+    height: 58px;
+}
+
+.css-modal-open {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-family: 'Roboto', Тahoma, sans-serif;
+    cursor: pointer;
+
+    background: #FF4B4B;
+    box-shadow: 2px 5px 10px #497957;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+}
+.css-modal-open:hover,
+.css-modal-open:active,
+.css-modal-open:focus {
+    color: #FFF;
+}
+
+.css-modal-open:hover:before,
+.css-modal-open:active:before,
+.css-modal-open:focus:before {
+    transform: translateX(0);
+}
+
+/* Контейнер, который затемняет страницу */
+.css-modal-target {
+    display: none;
+}
+.css-modal-target:target {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Модальное окно */
+.css-modal-target .cmt {
+    font-size: 16px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background: #A6C9FF;
+    z-index: 8;
+
+
+    transition: 0.5s;
+    text-align: center;
+    overflow: auto;
+    animation: scale 0.5s ease;
+}
+
+.modal-text-pos{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Кнопка с крестиком закрывающая окно */
+.css-modal-close {
+    display: block;
+    text-align: center;
+    width: 43px;
+    height: 39px;
+    top: 15px;
+    left: 342px;
+    padding: 8px ;
+    border-radius: 5px;
+
+    background: #497957;
+}
+
+.css-modal-close:hover{
+    background: #395e44;
+}
+.modal-btn-pos{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Анимации */
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes move {
+    0% {
+        right: -80px;
+    }
+    100% {
+        right: 20px;
+    }
+}
+@keyframes bg {
+    0% {
+        background: rgba(51, 122, 183, 0);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}

@@ -1,0 +1,86 @@
+@media (min-width: 800px) and (max-width:  1200px) {
+    main{
+        width: 800px;
+    }
+    nav ul{
+        width: 50%;
+    }
+
+    .lime{
+        height: 150px;
+    }
+
+    .SectionBlock2Main{
+        height: 320px;
+    }
+
+    .SectionBlock3Main{
+        height: 155px;
+    }
+
+    .clos-menu{
+        left: 200px;
+    }
+}
+
+@media (min-width: 320px) and (max-width:  800px) {
+    main{
+        width: 600px;
+    }
+    nav{
+        height: 75px;
+    }
+    nav ul{
+        width: 50%;
+    }
+    nav>ul>li a{
+        font-size: 15px;
+    }
+    .SectionPop-up{
+        height: 125px;
+    }
+
+    .SectionPop-upMainText h1{
+        font-size: 25px;
+    }
+
+    .css-modal-target-container {
+
+        width: 200px;
+        height: 45px;
+
+    }
+
+    .css-modal-open{
+        font-size: 15px;
+    }
+
+    .lime{
+        height: 100px;
+    }
+
+    .SectionBlock2Main{
+        height: 212px;
+    }
+
+    .SectionPop-upSpanL, .SectionPop-upSpanR{
+        padding: 10px;
+    }
+    .SectionBlock3Main{
+        padding: 5px;
+        height: 90px;
+    }
+
+    .SectionBlock3Box{
+        border-radius: 15px;
+    }
+
+    footer a{
+        font-size: 14px;
+    }
+
+    .clos-menu{
+        left: 0;
+    }
+}
+

@@ -1,0 +1,106 @@
+
+.burger{
+    margin: 0px 10%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger::before, .burger::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before{top: 0}
+.burger::after{bottom: 0}
+
+.burger span{
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #fff;
+}
+
+.burger.active span{
+    transform: scale(0);
+}
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0 , -50%);
+}
+
+.burger.active::after{
+    bottom:50% ;
+    transform: rotate(45deg) translate(0 , 50%);
+}
+
+.clos-menu{
+    width: 451px;
+    background: #A6C9FF;
+    height: 500px;
+    position: absolute;
+
+    z-index: 5;
+    top: 0;
+    left: 19.1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.clos-menu-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+.clos-menu-pos-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clos-menu-links>li a {
+    padding-left: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: left;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+}
+
+.disaibl{
+    display: none;
+}
+
+.open-menu.no-vorks{
+    scale: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+@media (min-width: 320px) and (max-width:  800px) {
+    .burger{
+        width: 25px;
+        height: 15px;
+    }
+}
